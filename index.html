@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/icons8-stopwatch-100.png">
+    <title>Cronômetro</title>
+</head>
+    <body>
+        <div class="container">
+            <h1>CRONÔMETRO</h1>
+            <div class="container__tempo">
+                <div>
+                    <span class="tempo" id="horas">00</span>
+                    <p>Horas</p>
+                </div>
+                <div>
+                    <span class="tempo" id="minutos">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div>
+                    <span class="tempo" id="segundos">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+            <div class="container__botoes">
+                <button id="stop" onclick="stop()" class="icon"><img src="./assets/img/icons8-stop-60.png" alt="" srcset="" width="25px" height="25px"></button>
+                <button id="play" onclick="play()" class="icon"><img src="./assets/img/icons8-play-100.png" alt="" srcset="" width="45px" height="45px"></button>
+                <button id="pause" onclick="pause()" class="icon"><img src="./assets/img/icons8-pause-60.png" alt="" srcset="" width="25px" height="25px"></button>
+            </div>
+        </div>
+    </body>
+<script src="./assets/js/script.js"></script>
+</html>

@@ -1,0 +1,86 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root{
+    font-family: 'Roboto Condensed', sans-serif;
+    --cor-texto: #EEEEEE;
+}
+
+body{
+    background: rgb(73,92,131);
+    background: linear-gradient(156deg, rgba(73,92,131,1) 0%, rgba(122,134,182,1) 38%, rgba(168,164,206,1) 57%, rgba(200,182,226,1) 79%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: var(--cor-texto);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12em;
+}
+
+h1{
+    text-align: center;
+    padding: 1em;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.container__tempo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container__tempo div{
+    padding: 3em;
+}
+
+.tempo{
+    font-size: 70px;
+}
+
+.container__botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#pause, #stop {
+    background-color: #C8B6E2;
+    border: none;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#play {
+    background-color: #C8B6E2;
+    border: none;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#pause, #stop, #play{
+    transition: 100ms;
+    margin: 0 3em;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#play:hover, #pause:hover, #stop:hover{
+    background-color: #a8a4ce;
+}
